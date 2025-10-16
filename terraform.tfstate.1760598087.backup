@@ -1,0 +1,84 @@
+{
+  "version": 4,
+  "terraform_version": "1.11.3",
+  "serial": 8,
+  "lineage": "99ab5594-04d3-1a17-66b4-58ac8e6112b3",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_key_pair",
+      "name": "mykey",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-south-1:851725195108:key-pair/portfolio-key",
+            "fingerprint": "75:ba:5d:29:d2:87:be:64:ec:99:86:ea:96:ed:95:e2",
+            "id": "portfolio-key",
+            "key_name": "portfolio-key",
+            "key_name_prefix": "",
+            "key_pair_id": "key-0941db4c98a958a39",
+            "key_type": "rsa",
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEYbr74ppCnYLqJelQp4LOH1+EkJFf+KAA+Gb+S9c8WANnH0fB2Q2mMSKsE2XDsz8loGmdRI1XmzCt76W4TXwiJSQnRvUvGvcLvEuNv5PSlmY0+tkS7iftHq9Ys98RNmxJd8N8em0LywuRjXTxZ1/1UoAZuK1WPTwF22N2ZeY7nIsImxnUhcnrZ/TAOXAVoRLV1hDJUnIK6a+rNI3avG8a1BknJgS0ie5oxqotRZflUP6MMAM7vNARSpVNJFzHu7O9Jd1u5w8JJHZiWaVfC0Bc1Nq6t6qRawW+owqS+PVA5p54P4WUrAV3dfMECxLbXlArK+8riSsdBFmScYW/wbaB",
+            "region": "ap-south-1",
+            "tags": {},
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group",
+      "name": "web_sg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-south-1:851725195108:security-group/sg-0c43e8778f887dfb3",
+            "description": "Allow SSH and HTTP access",
+            "egress": [
+              {
+                "cidr_blocks": [
+                  "0.0.0.0/0"
+                ],
+                "description": "",
+                "from_port": 0,
+                "ipv6_cidr_blocks": [],
+                "prefix_list_ids": [],
+                "protocol": "-1",
+                "security_groups": [],
+                "self": false,
+                "to_port": 0
+              }
+            ],
+            "id": "sg-0c43e8778f887dfb3",
+            "ingress": [],
+            "name": "web-sg",
+            "name_prefix": "",
+            "owner_id": "851725195108",
+            "region": "ap-south-1",
+            "revoke_rules_on_delete": false,
+            "tags": {
+              "Name": "web-sg"
+            },
+            "tags_all": {
+              "Name": "web-sg"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-031e6f48281da9576"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6OTAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
