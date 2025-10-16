@@ -20,3 +20,5 @@ Thumbs.db
 
 # Logs
 *.log
+
+ terraform.tfstate.1760598087.backup
